@@ -1,0 +1,13 @@
+mutation discountCode($checkoutId: ID!, $discountCode: String){
+    checkoutUpdateVoucher(checkoutId: $checkoutId, voucherCode: $discountCode) {
+        checkout {
+            id
+            token
+            quantity
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

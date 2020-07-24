@@ -1,0 +1,15 @@
+mutation editAccount($input: CustomerInput!) {
+    loggedUserUpdate(input: $input) {
+        user {
+            id
+            firstName
+            lastName
+            email
+            token
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

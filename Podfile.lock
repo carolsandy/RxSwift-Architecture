@@ -1,0 +1,58 @@
+PODS:
+  - Analytics (3.7.0)
+  - Apollo (0.17.0):
+    - Apollo/Core (= 0.17.0)
+  - Apollo/Core (0.17.0)
+  - AppsFlyerFramework (4.10.4)
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - segment-appsflyer-ios (1.3.2):
+    - Analytics (~> 3.5)
+    - AppsFlyerFramework (= 4.10.4)
+  - SwiftLint (0.38.0)
+
+DEPENDENCIES:
+  - Analytics (~> 3.0)
+  - Apollo (~> 0.17.0)
+  - Crashlytics
+  - Fabric
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - segment-appsflyer-ios
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Analytics
+    - Apollo
+    - AppsFlyerFramework
+    - Crashlytics
+    - Fabric
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - segment-appsflyer-ios
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Analytics: 77fd5fb102a4a5eedafa2c2b0245ceb7b7c15e45
+  Apollo: abde576f6d0cd9b7c921b1c45d7fb7424f95ede7
+  AppsFlyerFramework: aeb793095c1b33170ae30bef66652c0645f409be
+  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  segment-appsflyer-ios: 5fba67663b1f9695a20f7a248dea948d06c4aa5f
+  SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
+
+PODFILE CHECKSUM: c33e60fbc4ea0935fda57ce0de3bd8123233a291
+
+COCOAPODS: 1.8.4

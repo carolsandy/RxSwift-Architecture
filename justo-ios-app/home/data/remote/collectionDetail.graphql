@@ -1,0 +1,72 @@
+query fetchCollection($id: ID!, $first: Int, $after: String) {
+    collection(id: $id) {
+        id
+        name
+        slug
+        description
+        backgroundImage {
+            url
+            color
+        }
+        isBanner
+        isHidden
+        products(first: $first, after: $after) {
+            pageInfo {
+                hasNextPage
+                endCursor
+            }
+            edges {
+                node {
+                    id
+                    name
+                    pricing {
+                        priceRange {
+                            stop {
+                                gross {
+                                    amount
+                                    localized
+                                }
+                            }
+                        }
+                    }
+                    weight {
+                        unit
+                        value
+                    }
+                    description
+                    availability {
+                        quantityOnCheckout
+                    }
+                    thumbnail {
+                        url
+                    }
+                    category {
+                        id
+                        name
+                    }
+                    productType {
+                        name
+                    }
+                    isAvailable
+                    variants {
+                        id
+                        sku
+                        name
+                        pricing {
+                            price {
+                                gross {
+                                    amount
+                                    currency
+                                    localized
+                                }
+                            }
+                        }
+                        availability {
+                            quantityOnCheckout
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

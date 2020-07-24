@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="justo_ios_app" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Hsp-Ao-LfL" id="D8h-zY-cgH"/>
+                <outlet property="dismissButton" destination="gEU-TJ-3xW" id="ADc-xz-6YN"/>
+                <outlet property="pageControl" destination="Lqb-fQ-fV9" id="Oc5-eg-F30"/>
+                <outlet property="startButton" destination="uDk-PO-iuB" id="TJf-Mh-bbg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hsp-Ao-LfL">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nys-KV-gnh">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEU-TJ-3xW">
+                    <rect key="frame" x="348" y="52" width="44" height="29"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="initHomeTabController:" destination="-1" eventType="touchUpInside" id="6tA-vI-e8I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDk-PO-iuB">
+                    <rect key="frame" x="45" y="776" width="324" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Fhp-Cn-tTO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="initHomeTabController:" destination="-1" eventType="touchUpInside" id="nEx-DO-IS0"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Lqb-fQ-fV9">
+                    <rect key="frame" x="187.5" y="715" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.84843069309999997" green="0.8455678821" blue="0.84852796789999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.98900467160000005" green="0.78303182130000004" blue="0.13086602089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lqb-fQ-fV9" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1Bw-PO-SSb"/>
+                <constraint firstItem="uDk-PO-iuB" firstAttribute="top" secondItem="Lqb-fQ-fV9" secondAttribute="bottom" constant="24" id="2E6-aZ-wPn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uDk-PO-iuB" secondAttribute="bottom" constant="36" id="3Bu-CB-GME"/>
+                <constraint firstItem="uDk-PO-iuB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="CVZ-iL-bVq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gEU-TJ-3xW" secondAttribute="trailing" constant="22" id="Lym-JJ-79n"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hsp-Ao-LfL" secondAttribute="trailing" id="MT9-Wr-VGR"/>
+                <constraint firstItem="gEU-TJ-3xW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="YoK-wE-ovz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Hsp-Ao-LfL" secondAttribute="bottom" id="nrU-mf-Oyy"/>
+                <constraint firstItem="Hsp-Ao-LfL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rNp-6k-953"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uDk-PO-iuB" secondAttribute="trailing" constant="45" id="ukj-mi-FW5"/>
+                <constraint firstItem="Hsp-Ao-LfL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="yKC-GA-P9V"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,22 @@
+default_platform :ios
+
+platform :ios do
+  
+  lane :lint do
+    swiftlint(
+      mode: :lint,
+      reporter: "html",
+      output_file: "fastlane/swiftlint-results.html",
+      ignore_exit_status: true
+    )
+  end
+
+  lane :tests do
+    run_tests(
+      workspace: "justo-ios-app.xcworkspace",
+      scheme: "justo-ios-app",
+      clean: true
+    )
+  end
+
+end

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemSelectorView" customModule="justo_ios_app" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="CId-Lm-kp3" id="QXU-Yh-y8l"/>
+                <outlet property="containerView" destination="yoH-uU-h80" id="lhD-Yr-8X9"/>
+                <outlet property="equivalenceLabel" destination="7ae-el-U4J" id="Tcf-Ob-CCR"/>
+                <outlet property="removeButton" destination="eSK-sP-eM5" id="KAD-cs-TDI"/>
+                <outlet property="valueLabel" destination="zaI-Q8-1XU" id="ynW-5f-hFS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yoH-uU-h80">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSK-sP-eM5">
+                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eSK-sP-eM5" secondAttribute="height" multiplier="1:1" id="vWg-wa-Twe"/>
+                    </constraints>
+                    <state key="normal" image="cartRemove"/>
+                    <connections>
+                        <action selector="removeItem:" destination="-1" eventType="touchUpInside" id="upN-4i-IgN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CId-Lm-kp3">
+                    <rect key="frame" x="100" y="0.0" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CId-Lm-kp3" secondAttribute="height" multiplier="1:1" id="y4h-Hk-y6G"/>
+                    </constraints>
+                    <state key="normal" image="cartAdd"/>
+                    <connections>
+                        <action selector="addItem:" destination="-1" eventType="touchUpInside" id="51x-MX-OPv"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaI-Q8-1XU">
+                    <rect key="frame" x="28" y="0.0" width="68" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ae-el-U4J">
+                    <rect key="frame" x="62" y="1" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zaI-Q8-1XU" firstAttribute="leading" secondItem="eSK-sP-eM5" secondAttribute="trailing" constant="4" id="8pp-8b-wdx"/>
+                <constraint firstItem="zaI-Q8-1XU" firstAttribute="top" secondItem="yoH-uU-h80" secondAttribute="top" id="8uJ-z8-YR0"/>
+                <constraint firstItem="eSK-sP-eM5" firstAttribute="leading" secondItem="yoH-uU-h80" secondAttribute="leading" id="Fq8-NR-6i2"/>
+                <constraint firstAttribute="trailing" secondItem="CId-Lm-kp3" secondAttribute="trailing" id="JG8-WU-7So"/>
+                <constraint firstItem="eSK-sP-eM5" firstAttribute="top" secondItem="yoH-uU-h80" secondAttribute="top" id="Kws-ux-OPt"/>
+                <constraint firstItem="7ae-el-U4J" firstAttribute="top" secondItem="zaI-Q8-1XU" secondAttribute="bottom" constant="1" id="Rwq-eV-gg6"/>
+                <constraint firstItem="7ae-el-U4J" firstAttribute="centerX" secondItem="yoH-uU-h80" secondAttribute="centerX" id="YhF-SR-yit"/>
+                <constraint firstItem="eSK-sP-eM5" firstAttribute="height" secondItem="yoH-uU-h80" secondAttribute="height" multiplier="0.6" id="Z7e-FK-CjT"/>
+                <constraint firstItem="CId-Lm-kp3" firstAttribute="height" secondItem="yoH-uU-h80" secondAttribute="height" multiplier="0.6" id="m1w-pa-LTY"/>
+                <constraint firstItem="CId-Lm-kp3" firstAttribute="top" secondItem="yoH-uU-h80" secondAttribute="top" id="xUt-am-bCS"/>
+                <constraint firstItem="CId-Lm-kp3" firstAttribute="leading" secondItem="zaI-Q8-1XU" secondAttribute="trailing" constant="4" id="xrH-7i-6Hs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="171" y="-249"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cartAdd" width="25" height="25"/>
+        <image name="cartRemove" width="25" height="25"/>
+    </resources>
+</document>

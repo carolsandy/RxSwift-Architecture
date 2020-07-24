@@ -1,0 +1,24 @@
+mutation addressAdd($input: AddressInput!) {
+    addressCreate(input: $input) {
+        user {
+            email
+            addresses {
+                id
+                addressName
+                firstName
+                lastName
+                companyName
+                streetAddress1
+                streetAddress2
+                city
+                postalCode
+                countryArea
+                phone
+            }
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

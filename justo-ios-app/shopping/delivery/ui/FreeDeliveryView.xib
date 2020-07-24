@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FreeDeliveryView" customModule="justo_ios_app" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="n3F-wX-J4z"/>
+                <outlet property="customContent" destination="mSH-a6-ySF" id="iLq-gP-g2V"/>
+                <outlet property="freeDeliveryLabel" destination="4z5-LC-pdc" id="D1C-m5-LMp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSH-a6-ySF">
+                    <rect key="frame" x="0.0" y="0.0" width="452" height="85"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freeDelivery" translatesAutoresizingMaskIntoConstraints="NO" id="gfH-bf-HJy">
+                            <rect key="frame" x="16" y="32.5" width="40" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="5MP-76-NWv"/>
+                                <constraint firstAttribute="width" constant="40" id="yC8-Wb-MIy"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="4z5-LC-pdc">
+                            <rect key="frame" x="72" y="32.5" width="364" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="4z5-LC-pdc" firstAttribute="centerY" secondItem="gfH-bf-HJy" secondAttribute="centerY" id="8q5-NW-573"/>
+                        <constraint firstItem="gfH-bf-HJy" firstAttribute="centerY" secondItem="mSH-a6-ySF" secondAttribute="centerY" id="Kka-Fl-YQu"/>
+                        <constraint firstAttribute="trailing" secondItem="4z5-LC-pdc" secondAttribute="trailing" constant="16" id="Wbi-km-gzQ"/>
+                        <constraint firstItem="4z5-LC-pdc" firstAttribute="leading" secondItem="gfH-bf-HJy" secondAttribute="trailing" constant="16" id="mqR-vo-hFk"/>
+                        <constraint firstItem="gfH-bf-HJy" firstAttribute="leading" secondItem="mSH-a6-ySF" secondAttribute="leading" constant="16" id="uPF-9d-df9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mSH-a6-ySF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2c3-Bs-I7E"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mSH-a6-ySF" secondAttribute="trailing" id="SPS-lz-xEY"/>
+                <constraint firstItem="mSH-a6-ySF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bGE-sd-Qe4"/>
+                <constraint firstAttribute="bottom" secondItem="mSH-a6-ySF" secondAttribute="bottom" id="fDk-gq-knU"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="165.21739130434784" y="-42.857142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="freeDelivery" width="40" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,8 @@
+mutation tokenLogout {
+    tokenLogout {
+        message
+        errors {
+            message
+        }
+    }
+}

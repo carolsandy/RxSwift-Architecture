@@ -1,0 +1,20 @@
+mutation signIn($email: String!, $password: String!) {
+    tokenCreate(email: $email, password: $password) {
+        token
+        user {
+            id
+            token
+            email
+            firstName
+            lastName
+            checkout {
+                id
+                token
+                quantity
+            }
+        }
+        errors {
+            message
+        }
+    }
+}

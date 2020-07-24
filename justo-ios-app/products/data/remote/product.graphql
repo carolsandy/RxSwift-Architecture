@@ -1,0 +1,52 @@
+query fetchProduct($id: ID!) {
+    product(id: $id) {
+        id
+        name
+        description
+        availability {
+            quantityOnCheckout
+        }
+        weight {
+            unit
+            value
+        }
+        thumbnail {
+            url
+        }
+        category {
+            id
+            name
+        }
+        productType {
+            name
+        }
+        isAvailable
+        pricing {
+            priceRange {
+                stop {
+                    gross {
+                        amount
+                        localized
+                    }
+                }
+            }
+        }
+        variants {
+            id
+            sku
+            name
+            pricing {
+                price {
+                    gross {
+                        amount
+                        currency
+                        localized
+                    }
+                }
+            }
+            availability {
+                quantityOnCheckout
+            }
+        }
+    }
+}

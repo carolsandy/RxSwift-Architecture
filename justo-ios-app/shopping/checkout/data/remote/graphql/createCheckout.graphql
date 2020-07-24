@@ -1,0 +1,13 @@
+mutation createCheckout($checkoutCreateInput: CheckoutCreateInput!) {
+    checkoutCreate(input: $checkoutCreateInput) {
+        checkout {
+            id
+            token
+            quantity
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

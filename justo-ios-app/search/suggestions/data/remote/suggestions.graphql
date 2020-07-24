@@ -1,0 +1,5 @@
+query fetchSuggestions($query: String!) {
+    autocomplete(query: $query) {
+        result
+    }
+}

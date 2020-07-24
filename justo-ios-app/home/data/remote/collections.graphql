@@ -1,0 +1,80 @@
+query fetchCollections(
+    $first: Int
+    $after: String
+    $filter: CollectionFilterInput!
+    ) {
+        collections(first: $first, filter: $filter) {
+            edges {
+                node {
+                    id
+                    name
+                    slug
+                    description
+                    backgroundImage {
+                        url
+                        color
+                    }
+                    isBanner
+                    isHidden
+                    products(first: 10, after: $after) {
+                        pageInfo {
+                            hasNextPage
+                            endCursor
+                        }
+                        edges {
+                            node {
+                                id
+                                name
+                                description
+                                availability {
+                                    quantityOnCheckout
+                                }
+                                pricing {
+                                    priceRange {
+                                        stop {
+                                            gross {
+                                                amount
+                                                localized
+                                            }
+                                        }
+                                    }
+                                }
+                                weight {
+                                    unit
+                                    value
+                                }
+                                thumbnail {
+                                    url
+                                }
+                                category {
+                                    id
+                                    name
+                                }
+                                productType {
+                                    name
+                                }
+                                isAvailable
+                                variants {
+                                    id
+                                    sku
+                                    name
+                                    pricing {
+                                        price {
+                                            gross {
+                                                amount
+                                                currency
+                                                localized
+                                            }
+                                        }
+                                    }
+                                    availability {
+                                        quantityOnCheckout
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

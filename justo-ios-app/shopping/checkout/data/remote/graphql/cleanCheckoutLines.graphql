@@ -1,0 +1,13 @@
+mutation cleanCheckoutLines($checkoutId: ID!) {
+    checkoutCleanLines(checkoutId: $checkoutId) {
+        checkout {
+            id
+            token
+            quantity
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

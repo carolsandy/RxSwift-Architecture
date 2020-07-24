@@ -1,0 +1,25 @@
+query fetchCategories($level: Int!, $first: Int!) {
+    categories(level: $level, first: $first) {
+        edges {
+            node {
+                id
+                name
+                backgroundImage {
+                    url
+                }
+                children(first: 30) {
+                    totalCount
+                    edges {
+                        node {
+                            id
+                            name
+                            backgroundImage {
+                                url
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+query fetchOrder($id: ID!) {
+    order(id: $id) {
+        id
+        number
+        subtotal {
+            gross {
+                amount
+            }
+        }
+        total {
+            gross {
+                amount
+            }
+        }
+        shippingPrice {
+            gross {
+                amount
+            }
+        }
+        discountAmount {
+            amount
+        }
+        shippingAddress {
+            streetAddress1
+            streetAddress2
+            countryArea
+            city
+            cityArea
+            phone
+        }
+        deliveryDate
+        payments {
+            creditCard {
+                brand
+                lastDigits
+            }
+        }
+        customerNote
+        lines {
+            id
+            thumbnail {
+                url
+            }
+            productName
+            quantity
+            total {
+                gross {
+                    amount
+                }
+            }
+        }
+    }
+}

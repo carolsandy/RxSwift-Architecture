@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CategoryEntity" representedClassName="CategoryEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="backgroundImage" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="subcategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SubcategoryEntity" inverseName="category" inverseEntity="SubcategoryEntity"/>
+    </entity>
+    <entity name="SubcategoryEntity" representedClassName="SubcategoryEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="backgroundImage" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryEntity" inverseName="subcategories" inverseEntity="CategoryEntity"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" codeGenerationType="class">
+        <attribute name="checkoutId" optional="YES" attributeType="String"/>
+        <attribute name="checkoutQuantity" optional="YES" attributeType="String"/>
+        <attribute name="checkoutToken" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="token" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <userInfo/>
+    </entity>
+    <elements>
+        <element name="CategoryEntity" positionX="-274.84375" positionY="-196.3046875" width="128" height="103"/>
+        <element name="SubcategoryEntity" positionX="-45" positionY="45" width="128" height="103"/>
+        <element name="UserEntity" positionX="-602.36328125" positionY="-162.046875" width="128" height="163"/>
+    </elements>
+</model>

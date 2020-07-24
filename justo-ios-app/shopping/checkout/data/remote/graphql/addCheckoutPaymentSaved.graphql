@@ -1,0 +1,36 @@
+mutation addCheckoutPaymentSaved(
+    $checkoutId: ID!
+    $cardId: ID!
+    $deviceSessionId: String!
+) {
+    checkoutAddSavedCard(
+        checkoutId: $checkoutId
+        cardId: $cardId
+        deviceSessionId: $deviceSessionId
+    ) {
+        payment {
+            id
+            chargeStatus
+            actions
+            total {
+                amount
+            }
+            transactions {
+                id
+                gatewayResponse
+                token
+            }
+            creditCard {
+                brand
+                firstDigits
+                lastDigits
+                expMonth
+                expYear
+            }
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

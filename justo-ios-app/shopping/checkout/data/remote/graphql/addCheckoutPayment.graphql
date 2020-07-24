@@ -1,0 +1,28 @@
+mutation checkoutPaymentAdd($checkoutId: ID!, $input: PaymentInput!) {
+    checkoutPaymentCreate(checkoutId: $checkoutId, input: $input) {
+        payment {
+            id
+            chargeStatus
+            actions
+            total {
+                amount
+            }
+            transactions {
+                id
+                gatewayResponse
+                token
+            }
+            creditCard {
+                brand
+                firstDigits
+                lastDigits
+                expMonth
+                expYear
+            }
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

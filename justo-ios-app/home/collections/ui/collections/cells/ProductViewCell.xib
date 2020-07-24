@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="gTV-IL-0wX" customClass="ProductViewCell" customModule="justo_ios_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="148" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="148" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRD-i7-s63">
+                        <rect key="frame" x="0.0" y="0.0" width="148" height="210"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Db-bT-Awo" customClass="ImageView" customModule="justo_ios_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="148" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="d3W-5K-byv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5V-K9-Rv1">
+                                <rect key="frame" x="12" y="94" width="124" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlJ-gw-6vY">
+                                <rect key="frame" x="12" y="145" width="42" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5gJ-tK-Z9q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGy-1r-nao" customClass="ItemSelectorView" customModule="justo_ios_app" customModuleProvider="target">
+                                <rect key="frame" x="15" y="176.5" width="118" height="33.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rGy-1r-nao" firstAttribute="width" secondItem="KRD-i7-s63" secondAttribute="width" multiplier="0.8" id="0yZ-5K-e5c"/>
+                            <constraint firstItem="5Db-bT-Awo" firstAttribute="top" secondItem="KRD-i7-s63" secondAttribute="top" id="4Dx-Xr-NUL"/>
+                            <constraint firstItem="rGy-1r-nao" firstAttribute="centerX" secondItem="KRD-i7-s63" secondAttribute="centerX" id="88o-bf-83R"/>
+                            <constraint firstItem="H5V-K9-Rv1" firstAttribute="top" secondItem="5Db-bT-Awo" secondAttribute="bottom" constant="4" id="GBt-DX-OTD"/>
+                            <constraint firstItem="SlJ-gw-6vY" firstAttribute="leading" secondItem="KRD-i7-s63" secondAttribute="leading" constant="12" id="QCh-tf-aiY"/>
+                            <constraint firstAttribute="bottom" secondItem="rGy-1r-nao" secondAttribute="bottom" id="QNG-Yk-QeU"/>
+                            <constraint firstItem="rGy-1r-nao" firstAttribute="height" secondItem="KRD-i7-s63" secondAttribute="height" multiplier="0.16" id="dNd-Zm-ATU"/>
+                            <constraint firstItem="5Db-bT-Awo" firstAttribute="leading" secondItem="KRD-i7-s63" secondAttribute="leading" id="iOu-fm-xQ4"/>
+                            <constraint firstAttribute="trailing" secondItem="5Db-bT-Awo" secondAttribute="trailing" id="m8S-4o-kim"/>
+                            <constraint firstItem="H5V-K9-Rv1" firstAttribute="leading" secondItem="KRD-i7-s63" secondAttribute="leading" constant="12" id="mbx-NO-hR7"/>
+                            <constraint firstAttribute="trailing" secondItem="H5V-K9-Rv1" secondAttribute="trailing" constant="12" id="oOl-Z0-JyH"/>
+                            <constraint firstAttribute="bottom" secondItem="SlJ-gw-6vY" secondAttribute="bottom" constant="40" id="wWo-fc-jqH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KRD-i7-s63" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Sw-WA-B3l"/>
+                <constraint firstAttribute="trailing" secondItem="KRD-i7-s63" secondAttribute="trailing" id="EV9-hz-gdU"/>
+                <constraint firstAttribute="bottom" secondItem="KRD-i7-s63" secondAttribute="bottom" id="JJL-Ne-abW"/>
+                <constraint firstItem="KRD-i7-s63" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hu9-aY-mal"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="150" height="182"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="H5V-K9-Rv1" id="jfJ-8V-QEc"/>
+                <outlet property="imageView" destination="5Db-bT-Awo" id="a6P-El-KHv"/>
+                <outlet property="itemSelectorView" destination="rGy-1r-nao" id="wp0-bg-Pmo"/>
+                <outlet property="priceLabel" destination="SlJ-gw-6vY" id="4ts-a0-UHa"/>
+            </connections>
+            <point key="canvasLocation" x="20.289855072463769" y="46.205357142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>

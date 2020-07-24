@@ -1,0 +1,17 @@
+query fetchPaymentMethods($first: Int!) {
+    me {
+        savedCards(first: $first) {
+            edges {
+                node {
+                    id
+                    reference
+                    brand
+                    expirationMonth
+                    expirationYear
+                    lastDigits
+                    isDefault
+                }
+            }
+        }
+    }
+}

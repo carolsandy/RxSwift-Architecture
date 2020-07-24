@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesViewController" customModule="justo_ios_app" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="xg8-Sf-Fbg" id="r6j-99-xmV"/>
+                <outlet property="categoriesCollectionView" destination="qLh-Xk-gbR" id="YFR-O8-kKv"/>
+                <outlet property="missingSomethingView" destination="Lfe-Xv-x5K" id="34s-WH-5Ia"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-Sf-Fbg">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qLh-Xk-gbR">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0xp-XS-Nag">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="50" height="50"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfe-Xv-x5K" customClass="MissingSomethingView" customModule="justo_ios_app" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qLh-Xk-gbR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4t7-Vd-iee"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qLh-Xk-gbR" secondAttribute="bottom" id="7P4-JW-lUe"/>
+                <constraint firstItem="Lfe-Xv-x5K" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" id="7wC-wU-hmh"/>
+                <constraint firstItem="xg8-Sf-Fbg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BJX-Te-M5P"/>
+                <constraint firstItem="Lfe-Xv-x5K" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JNh-1E-Qpc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qLh-Xk-gbR" secondAttribute="trailing" id="Nla-KS-ZuQ"/>
+                <constraint firstItem="Lfe-Xv-x5K" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="OvF-FW-Eob"/>
+                <constraint firstItem="qLh-Xk-gbR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rxX-Ix-sEB"/>
+                <constraint firstItem="Lfe-Xv-x5K" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="t6t-6R-br2"/>
+                <constraint firstItem="xg8-Sf-Fbg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tBc-ns-uGa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="89.855072463768124" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>

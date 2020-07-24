@@ -1,0 +1,15 @@
+query fetchOrders($first: Int, $query: String) {
+    myOrders(first: $first, query: $query) {
+        edges {
+            node {
+                id
+                number
+                status
+                totalCaptured {
+                    amount
+                }
+                deliveryDate
+            }
+        }
+    }
+}

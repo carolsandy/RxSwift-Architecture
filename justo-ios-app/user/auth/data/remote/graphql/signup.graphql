@@ -1,0 +1,15 @@
+mutation signUp($firstName: String!, $lastName: String!, $email: String!, $zipCode: String!, $password: String!) {
+    customerRegister(input: {firstName: $firstName, lastName: $lastName, email: $email, zipCode: $zipCode, password: $password}) {
+        token
+        user {
+            id
+            token
+            email
+            firstName
+            lastName
+        }
+        errors {
+            message
+        }
+    }
+}

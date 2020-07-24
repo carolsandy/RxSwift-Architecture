@@ -1,0 +1,13 @@
+mutation addOrderLinesToCheckout($id: ID!) {
+    addOrderLinesToCheckout(id: $id) {
+        checkout {
+            id
+            token
+            quantity
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

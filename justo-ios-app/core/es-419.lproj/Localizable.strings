@@ -1,0 +1,212 @@
+/* Onboarding */
+"Onboarding First Page" = "Estás a punto de hacer tu compra en Jüsto.\nEl súper como debe ser.";
+"Onboarding Second Page" = "Te garantizamos frescura y calidad inigualables sin que gastes de más.";
+"Onboarding Third Page" = "Porque queremos que todo lo que llegue a tu hogar te haga feliz.";
+"Start Button" = "Hacer mi súper";
+"Dismiss Button" = "Saltar";
+
+/* Sign In */
+"Login Text" = "Iniciar\nSesión";
+"Email Placeholder" = "Correo electrónico";
+"Password Placeholder" = "Contraseña";
+"Forgot Password Text" = "¿Olvidaste tu contraseña?";
+"Sign In Text" = "Iniciar Sesión";
+"Sign Up Text" = "Regístrate";
+"Or Text" = "o";
+"Email Error" = "Ingresa un correo electrónico válido.";
+"Password Error" = "Ingresa una contraseña válida";
+"Close Modal Button" = "Cerrar";
+
+
+/* Recover Account */
+"Recover Account Text" = "Recupera\ntu cuenta";
+"Enter Your Email Text" = "Ingresa tu correo electrónico.";
+"Next Button" = "Siguiente";
+"Message Sent Text" = "¡Revisa tu correo electrónico!";
+"Message Sent Instructions Text" = "Te hemos enviado instrucciones para recuperar tu cuenta.";
+"OK Action" = "De Acuerdo";
+
+/* Reset Password */
+"Reset Password Text" = "Cambiar\ncontraseña";
+"Email Sample Placeholder" = "correo@justo.mx";
+"Save Password Text" = "Guardar contraseña";
+
+/* Sign Up */
+"Name Placeholder" = "Nombre";
+"Lastname Placeholder" = "Apellido";
+"Zip Code Placeholder" = "Código Postal";
+"Confirm Password Placeholder" = "Confirmar contraseña";
+"Terms Text" = "Acepto los términos y condiciones de Jüsto.";
+"Create Account Text" = "Crear cuenta";
+"Confirm Password Error" = "Las contraseñas no coinciden.";
+"Empty Field Error" = "Campo necesario.";
+"Zip Code Error" = "Ingresa un código postal válido.";
+"Accept Terms Error" = "Es necesario aceptar los términos y condiciones.";
+
+/* Tab Bar Menu Items */
+"Home Text" = "Inicio";
+"Search Text" = "Buscar";
+"Cart Text" = "Mi carrito";
+
+/* Home */
+"Home Title Text" = " Bienvenido a Jüsto";
+"Add Text" = "Agregar";
+"Categories Title Text" = "Nuestros Departamentos";
+"Network Error Title" = "¡Oh no!";
+"Network Error Label" = "Parece que no tienes conexión a internet.";
+"Unknown Error Title" = "Tenemos un problema.";
+"Unknown Error Label" = "Pero no te preocupes, lo estamos solucionando.";
+
+/* Cart */
+"Empty Cart Title" = "Tu carrito aún está vacío";
+"Empty Cart Label" = "Continúa navegando y conoce todos los productos que tenemos para ti.";
+"Purchase Button" = "Pagar";
+"Delete Text" = "Eliminar";
+"Update shopping Cart Error" = "¡Ups, no pudimos actualizar tu carrito!";
+"Update shopping Cart Success" = "¡Se ha actualizado tu carrito!";
+"Clear Cart Title" = "¿Estás seguro que deseas eliminar tu carrito?";
+"Clear Cart Action" = "Limpiar carrito";
+"Removed items Toast" = "Eliminaste %@ productos del carrito";
+
+/* Products */
+"Description Text" = "Descripción";
+"Piece Text" = "Pieza";
+"Weight Text" = "Kilo";
+"Weight Button Text" = "Peso";
+
+/* Profile */
+"My Account Title" = "Mi cuenta";
+"My orders Title Cell" = "Mis pedidos";
+"Shipment Addresses Title Cell" = "Direcciones de envío";
+"Payment Methods Title Cell" = "Métodos de pago";
+"Terms and Conditions Title Cell" = "Términos y condiciones";
+"Privacy Notice Title Cell" = "Aviso de privacidad";
+"Exit Title Cell" = "Salir";
+
+/* Search */
+"Search Placeholder" = "Buscar en Jüsto";
+"Search Results Title" = "Resultados";
+"Default Chip Text" = "Todas";
+"Empty Results Title" = "Sin resultados";
+"Empty Results Description" = "Quizá si navegas en las categorías encuentres lo que buscas.";
+
+/*Edit Profile*/
+"Edit Profile Title" = "Editar cuenta";
+"Save Button Title" = "Guardar cambios";
+"Change password Button Title" = "Cambiar contraseña";
+
+/*Edit Password*/
+"New password Placeholder" = "Contraseña nueva";
+"Repeat password Placeholder" = "Repetir contraseña";
+"Change Password Title" = "Cambiar contraseña";
+
+/* Filters */
+"Filters Title" = "Filtros";
+"Price" = "Precio";
+"Min Price Placeholder" = "$ mínimo";
+"Max Price Placeholder" = "$ máximo";
+"Apply Button Title" = "Aplicar";
+"Clean Button Title" = "Limpiar";
+
+/* Shopping */
+/* Addresses */
+"Shipping Address" = "Dirección de envío";
+"Add Shipping Address" = "Agregar dirección";
+"Add Shipping Address Button" = "Agregar dirección de envío";
+"Cancel Button" = "Cancelar";
+"Address Text" = "Dirección";
+"Address Name Placeholder" = "Nombra tu dirección";
+"Address Name Warning" = "Ej. Oficina, casa, departamento.";
+"Address Owner Placeholder" = "Nombre de la persona que recibe";
+"Street Placeholder" = "Calle y No. ext.";
+"Int Number Placeholder" = "No. Int";
+"Neighborhood Placeholder" = "Colonia";
+"Postal Code Placeholder" = "Código Postal";
+"Alcaldia Placeholder" = "Alcaldía";
+"City Placeholder" = "Ciudad de México";
+"Phone Placeholder" = "Número de teléfono";
+"Country" = "MX";
+"Country Area" = "Ciudad de México";
+"Name Error" = "Ingresa un nombre válido";
+"City Error" = "Ingresa una alcaldía valida";
+"City Area Error" = "Ingresa una colonia";
+"Phone Error" = "Ingresa un teléfono valido";
+"+52%@ phone" = "+52%@";
+"Phone Warning" = "Ej. 5512131415";
+ 
+"Add Card" = "Agregar tarjeta";
+"Card Name Placeholder" = "Nombre Completo";
+"Card Number Placeholder" = "Número de tarjeta";
+"Card Secure Code Placeholder" = "CVC";
+"Expiration Month Placeholder" = "MM";
+"Expiration Year Placeholder" = "AA";
+"Card Name Warning" = "Como viene en tu tarjeta";
+"Month" = "Mes";
+"Year" = "Año";
+"Delivery Options" = "Opciones de entrega";
+"Payment Method" = "Método de pago";
+"Free Delivery" = "¡Yei! Tu pedido aplica para envío gratis";
+"Delivery Day Label" = "Selecciona día de entrega";
+"Delivery Hour Label" = "Selecciona hora de entrega";
+"Discount Label" = "¿Tienes un cupón de descuento?";
+"Discount Warning" = "Tarjeta de regalo o código de descuento";
+"Discount Code Placeholder" = "Ingresa tu código";
+"Confirmation Order" = "Confirma tu compra";
+"Delivery Cost" = "Costo de envío";
+"Discount code" = "Cupón de descuento";
+"Total" = "Total";
+"Delivery Date" = "Día y hora de entrega";
+"Payment Information" = "Información de pago";
+"Note Placeholder" = "Agregar nota para el envío";
+"Warning Note" = "Ej. Mandarme aguacates para toda la semana, rebanadas de jamón delgadas, entregar con el portero.";
+"Less than minimum total amout allowed warning" = "¡Falta poco! Compra mínima de $250 pesos, continúa explorando la tienda.";
+"Subtotal %@ products" = "Subtotal %@ productos";
+"Cost Template" = "$ %@";
+"Delivery Cost" = "Costo de envío";
+
+/* Payment */
+"Card Name Error" = "Nombre de la tarjeta inválido";
+"Card Number Error" = "Número de la tarjeta inválido";
+"Card Code Error" = "CVV inválido";
+"Expiration Month Error" = "Mes inválido";
+"Expiration Year Error" = "Año inválido";
+"Expiration Date Error" = "La tarjeta ha expirado";
+"Card Creation Error" = "Ocurrió un error al registrar la tarjeta";
+"Card Template" = "Tarjeta que termina en %@";
+"Confirmation Button" = "Confirmar";
+"Save Card" = "Guardar mi tarjeta para próximas compras";
+
+/* Orders */
+"Orders Title" = "Mis Pedidos";
+"Order Delivery" = "Entrega";
+"Order Total" = "Total";
+"Order Status" = "Estado";
+"Date Combine" = "de";
+"Order Label" = "Pedido";
+"Order # Template" = "# %@";
+"Ready To Fulfill" = "Lista para envío";
+"Unfulfilled" = "Pendiente";
+"Partially Fulfilled" = "Parcialmente entregada";
+"Fulfilled" = "Entregado";
+"Canceled" = "Cancelado";
+"Empty Orders Title" = "Aún no realizas pedidos";
+"Empty Orders Message" = "Anímate a realizar tu primer pedido con nosotros.";
+"Note Title" = "Nota";
+"Add to Cart Button" = "Agregar al carrito";
+"Order Added to Cart Toast" = "¡Se ha actualizado tu carrito!";
+
+"Order # Title Template" = "# Orden %@";
+"%@ que termina en %@" = "%@ que termina en %@";
+"Total Lines Template" = "%@ productos";
+
+/* Confirmation Order */
+"Success Order Title" = "Pedido #%@";
+"Success Order Message" = "¡Gracias por tu compra!\n\nTe hemos enviado un correo con la información necesaria.";
+"Success Order Support" = "Si tienes dudas, escríbenos a";
+"Success Order Email" = "ayuda@justo.mx";
+"Error Order Title" = "¡Ay no!";
+"Error Order Message" = "Hubo un problema con tu pago, te recomendamos revisar de nuevo los datos de tu tarjeta.";
+"Products Subtotal %@" = "Subtotal %@ producto/s";
+
+/* Missing or Error View */
+"Retry Button" = "Reintentar";

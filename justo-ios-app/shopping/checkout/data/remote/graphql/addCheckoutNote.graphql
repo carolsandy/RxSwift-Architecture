@@ -1,0 +1,12 @@
+mutation checkoutNoteAdd($checkoutId: ID!, $note: String) {
+    checkoutUpdateNote(note: $note, checkoutId: $checkoutId) {
+        checkout {
+            id
+            token
+        }
+        errors {
+            field
+            message
+        }
+    }
+}

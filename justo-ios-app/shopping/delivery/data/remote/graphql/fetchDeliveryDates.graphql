@@ -1,0 +1,15 @@
+query fetchDeliveryDates($token: UUID!, $postalCode: String!) {
+    deliverySlots(token: $token, zipCode: $postalCode) {
+        nextDay {
+            year
+            month
+            weekDay
+            day
+            hours {
+                slot
+                startInterval
+                endInterval
+            }
+        }
+    }
+}

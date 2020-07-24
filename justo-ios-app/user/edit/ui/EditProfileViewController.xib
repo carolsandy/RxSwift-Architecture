@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileViewController" customModule="justo_ios_app" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="f8v-JI-Lrk" id="4QW-kj-NHi"/>
+                <outlet property="changePasswordButton" destination="IDT-fr-J28" id="xqE-Gk-Muy"/>
+                <outlet property="firstNameTextView" destination="uu5-1I-RoT" id="ue0-tn-J1J"/>
+                <outlet property="lastNameTextView" destination="WF6-gf-hp1" id="tDr-mk-Vgw"/>
+                <outlet property="saveButton" destination="SLG-2L-oW4" id="m9B-sp-H30"/>
+                <outlet property="view" destination="iN0-l3-epB" id="vtW-l8-8d8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLG-2L-oW4">
+                    <rect key="frame" x="26" y="254" width="362" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="uFv-oA-SdD"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="updateAccount:" destination="-1" eventType="touchUpInside" id="JKx-zw-mF1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDT-fr-J28">
+                    <rect key="frame" x="26" y="397" width="362" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="AqR-wp-SMc"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="updatePassword:" destination="-1" eventType="touchUpInside" id="XUz-FW-0F0"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="655-Kg-vHX">
+                    <rect key="frame" x="26" y="350" width="362" height="1"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.8455678821" blue="0.84852796789999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="jQP-E8-QNX"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="f8v-JI-Lrk">
+                    <rect key="frame" x="197" y="477" width="20" height="20"/>
+                </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uu5-1I-RoT" customClass="ErrorTextFieldView" customModule="justo_ios_app" customModuleProvider="target">
+                    <rect key="frame" x="26" y="79" width="362" height="63"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="63" id="NOg-vz-jeB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WF6-gf-hp1" customClass="ErrorTextFieldView" customModule="justo_ios_app" customModuleProvider="target">
+                    <rect key="frame" x="26" y="167" width="362" height="63"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="63" id="Ofs-c7-10M"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WF6-gf-hp1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="26" id="1TA-wI-6tj"/>
+                <constraint firstItem="IDT-fr-J28" firstAttribute="top" secondItem="SLG-2L-oW4" secondAttribute="bottom" constant="93" id="5WJ-mk-7Xi"/>
+                <constraint firstItem="uu5-1I-RoT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="26" id="98H-GT-rIq"/>
+                <constraint firstItem="f8v-JI-Lrk" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="EBl-vK-7R0"/>
+                <constraint firstItem="SLG-2L-oW4" firstAttribute="top" secondItem="WF6-gf-hp1" secondAttribute="bottom" constant="24" id="GqQ-K2-I0B"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WF6-gf-hp1" secondAttribute="trailing" constant="26" id="Ho7-1T-WgK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="655-Kg-vHX" secondAttribute="trailing" constant="26" id="Ih9-35-lgG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SLG-2L-oW4" secondAttribute="trailing" constant="26" id="Ocm-Wb-qwB"/>
+                <constraint firstItem="SLG-2L-oW4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="26" id="Rrp-Ov-Vjv"/>
+                <constraint firstItem="f8v-JI-Lrk" firstAttribute="top" secondItem="IDT-fr-J28" secondAttribute="bottom" constant="30" id="YNL-Zi-rDg"/>
+                <constraint firstItem="uu5-1I-RoT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="35" id="aav-qv-PFE"/>
+                <constraint firstItem="655-Kg-vHX" firstAttribute="top" secondItem="SLG-2L-oW4" secondAttribute="bottom" constant="46" id="beO-HQ-TY8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uu5-1I-RoT" secondAttribute="trailing" constant="26" id="dU7-9u-cp5"/>
+                <constraint firstItem="655-Kg-vHX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="26" id="op8-2a-h6q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IDT-fr-J28" secondAttribute="trailing" constant="26" id="pBW-PK-0TL"/>
+                <constraint firstItem="IDT-fr-J28" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="26" id="uc8-MS-KDc"/>
+                <constraint firstItem="WF6-gf-hp1" firstAttribute="top" secondItem="uu5-1I-RoT" secondAttribute="bottom" constant="25" id="w09-xO-lJg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckoutAddressViewController" customModule="justo_ios_app" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="nX3-t3-UwR" id="16R-jx-Ldn"/>
+                <outlet property="addAddressButton" destination="ygw-OL-p1z" id="nJP-eB-hIj"/>
+                <outlet property="addressesTableView" destination="PI2-vd-V6k" id="zqU-69-R6l"/>
+                <outlet property="nextButton" destination="yjS-zc-HlL" id="Aw9-dz-zpS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygw-OL-p1z">
+                    <rect key="frame" x="20" y="108" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="yKm-Ly-Bx6"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="initShippingAddressFormViewController:" destination="-1" eventType="touchUpInside" id="vHX-mh-vDQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAg-3U-bYh">
+                    <rect key="frame" x="354" y="120.5" width="24" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="XIG-s9-Bhc"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="cartAdd"/>
+                    <connections>
+                        <action selector="initShippingAddressFormViewController:" destination="-1" eventType="touchUpInside" id="dVD-yX-adK"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PI2-vd-V6k">
+                    <rect key="frame" x="20" y="164" width="374" height="698"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="nX3-t3-UwR">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjS-zc-HlL">
+                    <rect key="frame" x="20" y="788" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3Ck-Qv-elp"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didSelectCheckoutAddress:" destination="-1" eventType="touchUpInside" id="cJj-Lb-pyc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PI2-vd-V6k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3W4-5y-Hqf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yjS-zc-HlL" secondAttribute="trailing" constant="20" id="8p7-vb-NqS"/>
+                <constraint firstItem="PI2-vd-V6k" firstAttribute="top" secondItem="ygw-OL-p1z" secondAttribute="bottom" constant="6" id="D9N-PT-DUm"/>
+                <constraint firstItem="ygw-OL-p1z" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="64" id="Ddp-Dx-DMp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PI2-vd-V6k" secondAttribute="bottom" id="JAG-mm-bMQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yjS-zc-HlL" secondAttribute="bottom" constant="24" id="QOp-wa-f0Z"/>
+                <constraint firstItem="BAg-3U-bYh" firstAttribute="trailing" secondItem="ygw-OL-p1z" secondAttribute="trailing" constant="-16" id="QT5-JZ-4fK"/>
+                <constraint firstItem="nX3-t3-UwR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Y7u-ZO-DVt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ygw-OL-p1z" secondAttribute="trailing" constant="20" id="ddr-bN-ami"/>
+                <constraint firstItem="BAg-3U-bYh" firstAttribute="centerY" secondItem="ygw-OL-p1z" secondAttribute="centerY" id="f5y-3g-7Yx"/>
+                <constraint firstItem="nX3-t3-UwR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mUb-Qe-lXF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PI2-vd-V6k" secondAttribute="trailing" constant="20" id="twr-nJ-3We"/>
+                <constraint firstItem="ygw-OL-p1z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xBH-Sb-2vM"/>
+                <constraint firstItem="yjS-zc-HlL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="y5m-Q5-POU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cartAdd" width="25" height="25"/>
+    </resources>
+</document>

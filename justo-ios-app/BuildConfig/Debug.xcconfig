@@ -1,0 +1,7 @@
+BUNDLE_IDENTIFIER = mx.justo.ios.debug
+BUNDLE_DISPLAY_NAME= Jüsto Debug
+API_URL=https:/$()/api.fenixreborn.com/graphql/
+ENVIRONMENT= debug
+OPEN_PAY_MERCHANT_ID = mbptfftgfoovmp2q88kz
+OPEN_PAY_PUBLIC_KEY = pk_7e56025304af4bd588546646b191673d
+SEGMENT_WRITE_KEY = 4Dy2tgyiEeF8qANEH7KkrrvY5c0rTRY1

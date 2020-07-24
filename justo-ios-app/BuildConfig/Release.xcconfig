@@ -1,0 +1,7 @@
+BUNDLE_IDENTIFIER = mx.justo.ios.prod
+BUNDLE_DISPLAY_NAME = Jüsto
+API_URL=https:/$()/justo.mx/graphql/
+ENVIRONMENT= release
+OPEN_PAY_MERCHANT_ID =
+OPEN_PAY_PUBLIC_KEY =
+SEGMENT_WRITE_KEY =

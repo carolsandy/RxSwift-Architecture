@@ -1,0 +1,66 @@
+query search(
+    $first: Int!
+    $after: String
+    $query: String
+    $filter: ProductFilterInput
+    ) {
+        products(first: $first, query: $query, filter: $filter, after: $after) {
+            totalCount
+            pageInfo {
+                hasNextPage
+                endCursor
+            }
+            edges {
+                node {
+                    id
+                    name
+                    description
+                    availability {
+                        quantityOnCheckout
+                    }
+                    weight {
+                        unit
+                        value
+                    }
+                    thumbnail {
+                        url
+                    }
+                    category {
+                        id
+                        name
+                    }
+                    productType {
+                        name
+                    }
+                    isAvailable
+                    pricing {
+                        priceRange {
+                            stop {
+                                gross {
+                                    amount
+                                    localized
+                                }
+                            }
+                        }
+                    }
+                    variants {
+                        id
+                        sku
+                        name
+                        pricing {
+                            price {
+                                gross {
+                                    amount
+                                    currency
+                                    localized
+                                }
+                            }
+                        }
+                        availability {
+                            quantityOnCheckout
+                        }
+                    }
+                }
+            }
+        }
+}

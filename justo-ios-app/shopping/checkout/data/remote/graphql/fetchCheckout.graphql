@@ -1,0 +1,52 @@
+query fetchCheckoutQuery($token: UUID) {
+    checkout(token: $token) {
+        id
+        token
+        quantity
+        subtotalPrice {
+            gross {
+                amount
+            }
+        }
+        shippingPrice {
+            gross {
+                amount
+            }
+        }
+        discountAmount {
+            amount
+        }
+        totalPrice {
+            gross {
+                amount
+            }
+        }
+        shippingAddress {
+            id
+            addressName
+            firstName
+            lastName
+            streetAddress1
+            streetAddress2
+            city
+            cityArea
+            postalCode
+                country {
+                    country
+                    code
+                }
+                countryArea
+                phone
+                isDefaultShippingAddress
+                isDefaultBillingAddress
+        }
+        deliveryDate
+        paymentInfo {
+            ccFirstDigits
+            ccLastDigits
+            ccBrand
+            ccExpMonth
+            ccExpYear
+        }
+    }
+}

@@ -1,0 +1,62 @@
+import UIKit
+import CoreData
+import Fabric
+import Crashlytics
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "Justo")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = initMainViewController()
+        window?.makeKeyAndVisible()
+        initFabric()
+        initSegment()
+        return true
+    }
+
+    private func initMainViewController() -> UINavigationController {
+        let navigationController = UINavigationController(rootViewController: MainViewController())
+        navigationController.view.backgroundColor = .white
+        navigationController.isNavigationBarHidden = true
+        return navigationController
+    }
+
+    private func initFabric() {
+        Fabric.with([Crashlytics.self])
+    }
+
+    private func initSegment() {
+        SegmentSDK.shared.start()
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        self.saveContext()
+    }
+
+    func saveContext() {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
+
+}
